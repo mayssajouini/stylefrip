@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" content="width=device-width,initial-scale=1.0 ">
+  <link rel="stylesheet" href="styles.css">
+  <title>Contacter nous | Style Frip</title>
+  <script>
+    function checkEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+    function validate() {
+        var email = document.getElementById("email").value;
+    
+        if (checkEmail(email)) {
+            alert('Adresse e-mail non valide');
+        }
+        return false;
+    }
+ </script>
+  </head>
+  <body>
+    <nav class="barnav" style="margin-top: 0px;">
+      <a href="index.html"><img src='image/logo.png' class="logo" ></a>
+  
+      <ul>
+        <li><a href="index.html" >Accueil  </a></li>
+        <li><a href="articles.html">Nouveautés</a></li>
+        <li><div class="dropdown">
+          <button class="dropbtn"><a href="Homme.html">Homme</a></button>
+          <div class="dropdown-content">
+            <a href="CapuchesH.html">Capuches</a>
+            <a href="PullsH.html">Pulls</a>
+            <a href="PantH.html">Pantalons</a>
+            <a href="chaussH.html">Chaussures</a>
+            <a href="CasquetteH.html">Casquettes</a>
+          </div>
+        </div></li>
+        <li><div class="dropdown">
+          <button class="dropbtn"><a href="femme.html">Femme</a></button>
+          <div class="dropdown-content">
+            <a href="robe.html">Robes</a>
+            <a href="pullsF.html">Pulls</a>
+            <a href="pantsF.html">Pantalons</a>
+            <a href="chaussF.html">Chaussures</a>
+  
+          </div>
+        </div></li></li>
+        <li><a href="Contact.html"  class='active'>Contactez nous  </a>
+          <li><a href="Localiser.html">A propos de nous </a></li>
+        </li>
+        
+        <ul>
+        </nav>
+<div class="contact">
+  <p class="ad">Contactez nous directement sur nos reseaux sociaux</p>
+
+<div class="social">
+  <a href="" ><img src="Image/face.png" class="send1"></a>
+  <a href="" ><img src="Image/twitt.png" class="send1"></a>
+  <a href="" ><img src="Image/insta.png"class="send1"></a>
+</div>
+<p class="sinon">Sinon vous pouvez aussi</p>
+
+<div class="form">
+    <form class="inside">
+      <p>Remplir le formulaire !</p>
+  <input type="text" class="norm" required name="T1">
+  <label class="noun"><span class='content-name'>Nom et Prenom</span></label>
+  <input type="text" class="norm" required name="T2">
+  <label ><span class='content-name'>Email</span></label>
+  <input type="text"class="norm" required id='email'>
+  <label class='tel'><span class='content-name'>Numero de telephone</span></label>
+  <input type="text"class="norm" required> 
+  <label><span class='content-name'>Sujet</span></label>
+  <label class="desc" required>Description</label>
+  <textarea type="text" > </textarea>
+  <br>
+  <button class="send" type='submit' onclick="validate()"><span class="span2"></span>Envoyer</button>
+</form>
+
+</div>
+</div>
+<div class="foot" style="margin-top: 50px;">
+  <a href=""><img src="Image/logo-facebook.png" alt="" class="icone"></a>
+  <a href=""><img src="image/twitter.png" alt="" class="icone"></a>
+  <a href=""><img src="image/logo-instagram.png" alt="" class="icone"></a>
+  <a href=""><img src="image/facebook (1).png" alt="" class="icone"></a>
+  <p>Website design / logo © 2023</p>
+</div>
+</body>
+<footer>
+    </footer>
+</html>
+  
